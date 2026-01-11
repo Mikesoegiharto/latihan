@@ -1,0 +1,17 @@
+h1 {
+    font-size:40px;
+    font-weight: bold;
+    color: cadetblue;
+}
+
+p {
+    color: brown;
+}
+
+#name {
+    padding: 10px;
+}
+
+.input{
+    padding: 10px;
+}
