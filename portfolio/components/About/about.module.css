@@ -1,0 +1,106 @@
+.bodyabout {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    scroll-snap-align: start;
+    /* border: 2px solid black; */
+}
+
+.bingkaiprofil {
+    height: 632px;
+    width: 572px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid black; */
+}
+
+.profil {
+    height: 600px;
+    width: 400px;
+    border-radius: 60px;
+    margin: auto;
+    margin-top: auto;
+}
+
+.bio {
+    height: 632px;
+    width: 858px;
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid black; */
+}
+
+.nama {
+    width: 764px;
+    height: 34px;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+}
+
+.namakiri h2 {
+    flex: 1;
+    font-size: 14px;
+    font-family: "Inter", sans-serif;
+    line-height: 1;
+}
+
+.namatengah h2 {
+    flex: 1;
+    font-size: 14px;
+    font-family: "Inter", sans-serif;
+    line-height: 1;
+}
+
+.iconkanan {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+}
+
+.deskripsi {
+    width: 764px;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    color: #444452;
+}
+
+.deskripsi p {
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    color: #444452;
+}
+
+.garis hr {
+    width: 764px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #e9dfce;
+}
+
+.skill {
+    width: 764px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.skillicons {
+    display: flex;
+    flex-direction: row;
+    font-size: 32px;
+    gap: 12px;
+    justify-content: center;
+}
+
+:global(body.dark) p {
+    color: #e9dfce;
+}

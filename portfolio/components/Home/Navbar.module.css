@@ -1,0 +1,114 @@
+.navbar {
+    width: 100vw;
+    height: 54px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    gap: 40px;
+}
+
+.left {
+    display: flex;
+    flex: 1;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 0;
+    font-family: "Iceland", sans-serif;
+    font-size: 20px;
+}
+
+
+.middle {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 36px;
+    padding: 5px 24px;
+    border-radius: 9999px;
+    font-family: "Inter", sans-serif;
+    font-size: 12px;
+    z-index: 100;
+}
+
+.island {
+    position: fixed;
+    top: 24px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #ffffff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08), 0 1px 4px rgba(0, 0, 0, 0.04);
+    animation: slideDown 0.3s ease-out forwards;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translate(-50%, -20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate(-50%, 0);
+    }
+}
+
+.middle a {
+    color: #6b7280;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    padding-bottom: 4px;
+    border-bottom: 2px solid transparent;
+}
+
+.middle a:hover {
+    color: #374151;
+}
+
+.active {
+    color: #374151 !important;
+    font-weight: 500;
+    border-bottom: 2px solid #555 !important;
+}
+
+.right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex: 1;
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+}
+
+/* dark */
+:global(body.dark) .left {
+    display: flex;
+    flex: 1;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 0;
+    font-family: "Iceland", sans-serif;
+    font-size: 20px;
+    color: #e9dfce;
+}
+
+:global(body.dark) .island {
+    background-color: #1f2937;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+:global(body.dark) .middle a {
+    color: #9ca3af;
+}
+
+:global(body.dark) .middle a:hover {
+    color: #d1d5db;
+}
+
+:global(body.dark) .middle a.active {
+    color: #f3f4f6 !important;
+    border-bottom: 2px solid #f3f4f6 !important;
+}

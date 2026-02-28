@@ -1,0 +1,218 @@
+.bodyprojects {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    scroll-snap-align: start;
+}
+
+.bodyatas {
+    width: 1408px;
+    height: 306px;
+    display: flex;
+    flex-direction: row;
+    /* border: 2px solid red; */
+}
+
+.bodybawah {
+    width: 1408px;
+    height: 306px;
+    display: flex;
+    flex-direction: row;
+    /* border: 2px solid red; */
+}
+
+/* bagian atas */
+
+.bodyataskiri {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bodyataskanan {
+    flex: 1;
+    /* background-color: yellow; */
+}
+
+.gambarrobo {
+    width: 450px;
+    height: 238px;
+    border-radius: 25px;
+}
+
+/* bagian bawah */
+
+.bodybawahkiri {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bodybawahkanan {
+    flex: 1;
+    /* background-color: yellow; */
+}
+
+.gambartodo {
+    width: 450px;
+    height: 238px;
+    border-radius: 25px;
+}
+
+
+.bodyataskanan {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.upperatas {
+    width: 325px;
+    height: 81px;
+    margin-top: 70px;
+    /* background-color: aqua; */
+}
+
+.front {
+    font-size: 12px;
+    font-family: "Inter", sans-serif;
+    color: #444452;
+    opacity: .6;
+}
+
+.application {
+    font-size: 16px;
+    font-family: "Inter", sans-serif;
+    color: #444452;
+}
+
+.ztm {
+    font-size: 12px;
+    font-family: "Inter", sans-serif;
+    color: #444452;
+}
+
+.loweratas {
+    display: flex;
+    flex-direction: row;
+}
+
+.lowerataskiri {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    align-items: center;
+}
+
+.detailsWrapper {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    gap: 16px;
+    padding-bottom: 4px;
+    cursor: pointer;
+}
+
+.detailsWrapper::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 1px;
+    background-color: #444452;
+    transition: width 0.3s ease;
+}
+
+.detailsWrapper:hover::after {
+    width: 100%;
+}
+
+
+
+.detailsText {
+    position: relative;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 18px;
+    font-style: italic;
+    color: #444452;
+    z-index: 1;
+}
+
+.arrow {
+    position: relative;
+    color: #444452;
+    transition: transform 0.3s ease;
+}
+
+.detailsWrapper:hover .arrow {
+    transform: translateX(6px);
+}
+
+.lowerataskanan {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    align-items: center;
+    gap: 24px;
+}
+
+
+
+.bodybawahkanan {
+    flex: 1;
+    /* background-color: yellow; */
+}
+
+.upperbawah {
+    width: 325px;
+    height: 81px;
+    margin-top: 70px;
+    /* background-color: aqua; */
+}
+
+.frontbawah {
+    font-size: 12px;
+    font-family: "Inter", sans-serif;
+    color: #444452;
+    opacity: .6;
+}
+
+.applicationtodos {
+    font-size: 16px;
+    font-family: "Inter", sans-serif;
+    color: #444452;
+}
+
+.purwadhika {
+    font-size: 12px;
+    font-family: "Inter", sans-serif;
+    color: #444452;
+}
+
+.lowerbawah {
+    display: flex;
+    flex-direction: row;
+}
+
+.lowerbawahkiri {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+
+.lowerbawahkanan {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    align-items: center;
+    gap: 24px;
+}
