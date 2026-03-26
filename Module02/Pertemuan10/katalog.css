@@ -1,0 +1,138 @@
+body{
+    width: 375px;
+    height: 667px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #F2EAE2;
+}
+
+.kotak{
+    width: 343px;
+    height: 611px;
+    background-color: #FFFFFF;
+    margin-left: auto;
+    margin-right: auto;
+    /* margin-top: auto;
+    margin-bottom: auto; */
+    margin: 28px 16px;
+    border-radius: 16px;
+
+}
+.foto{
+    width: 343px;
+    height: 240px;
+}
+
+.parfume{
+    width: 92px;
+    height: 15px;
+    margin: 0px 0px 0px 24px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 12px;
+    color: #6C7289;
+}
+
+.gabriel{
+    width: 295px;
+    height: 64px;
+    font-weight: bold;
+    font-size: 32px;
+    color: #1C232B;
+    margin-bottom: auto;
+    margin-top: auto;
+    font-family: 'fraunces';
+    margin: 0px 0px 0px 24px;
+    font-family: Fraunces;
+    font-weight: 700;
+    leading-trim: NONE;
+    line-height: 32px;
+    letter-spacing: 0px;
+
+}
+
+.teks{
+    width: 295px;
+    height: 92px;
+    margin: 0px 0px 0px 24px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    line-height: 23px;
+    font-weight: 500;
+    leading-trim: NONE;
+    line-height: 23px;
+    letter-spacing: 0px;
+    color: #6C7289;
+}
+
+.harga{
+    display:flex; 
+    gap: 19px;
+    width: 194px;
+    height: 32x;
+    /* top: 487px;
+    left: 24.5px; */
+    margin: 50px 0px 0px 24.5px;
+}
+
+.dollar1{
+    width: 127px;
+    height: 32px;
+    font-family: Fraunces;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 32px;
+    leading-trim: NONE;
+    line-height: 32px;
+    letter-spacing: 0px;
+    color: #3D8168;
+    margin:5px 0 0 0;
+}
+
+.dollar2{
+    width: 48px;
+    height: 23px;
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 13px;
+    leading-trim: NONE;
+    line-height: 23px;
+    letter-spacing: 0px;
+    text-decoration: line-through;
+    color: #6C7289;
+    margin:5px 0 0 0;
+}
+
+.cart{
+    width: 295px;
+    height: 48px;
+    
+    background-color: #3D8168;
+    border-radius: 16px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.cartteks{
+    width: 111px;
+    height: 18px;
+    top: 554px;
+    left: 117px;
+    angle: 0 deg;
+    opacity: 1;
+    font-family: Montserrat;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 14px;
+    leading-trim: NONE;
+    line-height: 100%;
+    letter-spacing: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+}

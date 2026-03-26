@@ -1,0 +1,26 @@
+.todo{
+    width: 541px;
+    height: 48px;
+    position: fixed;
+    margin-top: -230px;
+    margin-left: 450px;
+    display: flex;
+}
+
+.left{
+    width: 270.5px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    font-size: 40px;
+    color: #FFFFFF;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.right{
+    width: 270.5px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}

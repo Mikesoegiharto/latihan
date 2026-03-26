@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 1440px;
+    height: 800px;
+    background-color: #F2EAE2;
+}
+
+.kotak{
+    width: 600px;
+    height: 450px;
+    margin: 175px 420px 175px 420px;
+    border-radius: 16px 16px 16px 16px;
+    display: flex;
+}
+.gambar{
+    width: 300px;
+    height: 450px;
+    border-radius: 16px 0 0 16px;
+}
+.text{
+    width: 300px;
+    height: 450px; 
+    background-color: #FFFFFF;
+    border-radius: 0 16px 16px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px
+}
+.parfume{
+    width: 92px;
+    height: 15px;
+    margin-top: 32px;
+    margin-left: 31.5px;
+    /* margin: 32px 176.5px 403px 31.5px; */
+    font-size: 12px;
+    font-family: "Montserrat", sans-serif;
+    color: #6C7289;
+    /* border: 1px solid black; */
+}
+
+.gab{
+    position: absolute;
+    width: 236px;
+    height: 96px;
+    margin-top: 67px;
+    margin-left: 32px;
+    font-size: 32px;
+    font-family: "Fraunces", serif;
+    font-weight: bold;
+    color: #1C232B;
+    
+}
+
+.floral{
+    position: absolute;
+    width: 237px;
+    height: 92px;
+    margin-top: 200px;
+    margin-left: 31.5px;
+    font-size: 14px;
+    font-family: "Montserrat", sans-serif;
+    color: #6C7289;
+}
+
+.d1{
+    position: absolute;
+    width: 127px;
+    height: 32px;
+    margin-top: 308px;
+    margin-left: 32px;
+    font-size: 32px;
+    font-family: "Fraunces", serif;
+    font-weight: bold;
+    color: #3D8168;
+}
+
+.d2{
+    position: absolute;
+    width: 48px;
+    height: 23px;
+    margin-top: 313px;
+    margin-left: 178px;
+    font-size: 13px;
+    font-family: "Montserrat", sans-serif;
+    color: #6C7289;
+    text-decoration: line-through;
+}
+
+.cart{
+    position: absolute;
+    width: 236px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #3D8168;
+    border-radius: 8px;
+    margin-top: 370px;
+    margin-left: 32px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #FFFFFF;
+    font-family: "Montserrat", sans-serif;
+}

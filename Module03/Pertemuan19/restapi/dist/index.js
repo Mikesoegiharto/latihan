@@ -1,0 +1,71 @@
+import express from "express";
+import fs from "fs/promises";
+const PORT = 8000;
+const app = express();
+//middleware untuk parsing json
+app.use(express.json());
+//middleware untuk parsing data URL-encoded (dari foorm HTML)
+app.get("/api", async (req, res) => {
+    res.json({
+        "foo": "bar"
+    });
+});
+//handler, router
+//code endpoint
+app.get("/api/todos", async (req, res) => {
+    //membaca file todos json
+    const jsonFile = await fs.readFile("./todos.json", "utf-8");
+    const todosData = JSON.parse(jsonFile);
+    res.status(200).send({
+        "message": "fetch todos success",
+        data: todosData.todos
+    });
+});
+//id
+//router detail todos
+app.get("/api/todos/:id", async (req, res) => {
+    const { id } = req.params;
+    //baca todos json
+    const jsonFile = await fs.readFile("./todos.json", "utf-8");
+    const todosData = JSON.parse(jsonFile); //convert ke json
+    const detail = todosData.todos.find((todo) => {
+        return todo.id === Number(id);
+    });
+    if (!detail) {
+        return res.status(404).send({
+            "message": "todo not found",
+        });
+    }
+    return res.status(200).send({
+        "message": "fetch todos success",
+        data: detail
+    });
+});
+//post
+//router handler untuk add todos
+app.post("/api/todos", async (req, res) => {
+    const jsonFile = await fs.readFile("./todos.json", "utf-8");
+    const todosData = JSON.parse(jsonFile); //array of object
+    const { title, done } = req.body;
+    todosData.todos.push({
+        id: todosData.todos[todosData.todos.length - 1].id + 1,
+        title,
+        done
+    });
+    //menulis ulang keseluruhan flie jsonnya
+    const writeJson = await fs.writeFile("./todos.json", JSON.stringify({
+        "todos": todosData.todos
+    }));
+    return res.status(200).send({
+        "message": "insert todos success",
+        data: {
+            id: todosData[todosData.todos.length - 1].id,
+            title,
+            done
+        }
+    });
+});
+app.listen(PORT, () => {
+    console.log("application run on port", PORT);
+});
+//# sourceMappingURL=index.js.map
