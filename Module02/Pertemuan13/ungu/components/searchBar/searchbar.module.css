@@ -1,0 +1,38 @@
+.kotak {
+  width: 540px;
+  height: 64px;
+  margin: -130px ;
+  margin-left: 450px;
+  background-color: #ffffff;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.checkkiri{
+    position: fixed;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -5px;
+    margin-left: -10px;
+}
+
+.checkkanan{
+    position: fixed;
+    width: 400px;
+    margin-left: 10px;
+    margin-top: -28px;
+}
+
+.button {
+    position: fixed;
+    margin-left: 425px;
+    margin-top: -10px;
+}
+
+list {
+    border: 5px solid black;
+}

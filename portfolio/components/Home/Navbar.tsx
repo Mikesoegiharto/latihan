@@ -14,9 +14,27 @@ export default function Navbar({ dark, setDark }: INavbarprops) {
 
     useEffect(() => {
         const handleScroll = () => {
-            setIsScrolled(window.scrollY > 50)
+            const scrollPos = window.scrollY
+            setIsScrolled(scrollPos > 50)
+
+            const sections = ['home', 'about', 'projects', 'contact']
+            for (let i = sections.length - 1; i >= 0; i--) {
+                const sectionId = sections[i]
+                const element = document.getElementById(sectionId)
+                if (element) {
+                    const rect = element.getBoundingClientRect()
+                    if (rect.top <= window.innerHeight * 0.35) {
+                        const capitalizedId = sectionId.charAt(0).toUpperCase() + sectionId.slice(1)
+                        setActive(capitalizedId)
+                        break;
+                    }
+                }
+            }
         }
+
         window.addEventListener('scroll', handleScroll)
+        handleScroll()
+
         return () => window.removeEventListener('scroll', handleScroll)
     }, [])
 

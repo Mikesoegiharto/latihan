@@ -1,0 +1,25 @@
+.kotak{
+    width: 540px;
+    height: 439px;
+    margin-top: 42px;
+    margin-left: 450px;
+    background-color: #ffffff;
+    display: flex;
+    display: inline-block;
+}
+
+.checkkiri{
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.kotak1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
